@@ -134,7 +134,7 @@ public class ArrayListExtensionsTest
     {
         initializeLists();
         
-        System.out.println("TESTING REVERSE");
+        System.out.println("TESTING REVERSE ");
         
         System.out.println("List 1 is ");
         testList1.display();
