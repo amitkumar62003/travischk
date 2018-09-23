@@ -144,6 +144,7 @@ public class ArrayListExtensionsTest
         System.out.println("List 1 is now");
         testList1.display();
         
+        
         System.out.println("Reversing list one a second time");       
         testList1.reverse();
         if(testList1.equals(testList2))
