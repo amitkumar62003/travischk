@@ -7,7 +7,7 @@ import java.util.Arrays;
  * The size of the array doubles until it exceeds the maximum allowed
  * capacity, where upon an exception is thrown.
  * 
- * @author Amit K Dogra
+ * @author Amit  Dogra
  *      
  * The toString method is overwritten to give a nice display of the items in
  * the list in this format { <1> <2> <3> <4> }
