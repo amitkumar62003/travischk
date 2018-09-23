@@ -1,20 +1,20 @@
 <?xml version = "1.0"?>
 <project name = "sample" basedir = "." default = "test">
     <target name="clean">
-        <delete dir="build"/>
+        <delete dir="CSX-351-HW5/bin"/>
     </target>
 
     <target name="compile">
-        <mkdir dir="bin1"/>
-        <javac includeantruntime="false" srcdir="src" destdir="bin1"/>
+        <mkdir dir="CSX-351-HW5/bin"/>
+        <javac includeantruntime="false" srcdir="CSX-351-HW5/src" destdir="bin1"/>
     </target>
 
     <target name="test" depends="compile">
         <java fork = "true" failonerror = "yes" classname = "ArrayListExtensionsTest">
-        	<classpath path="bin"></classpath>
+        	<classpath path="CSX-351-HW5/bin"></classpath>
         </java>
         <java fork = "true" failonerror = "yes" classname = "LinkedListExtensionsTest">
-        <classpath path="bin"></classpath>
+        <classpath path="CSX-351-HW5/bin"></classpath>
         </java>
     </target>
 
