@@ -1,0 +1,21 @@
+<?xml version = "1.0"?>
+<project name = "sample" basedir = "." default = "test">
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="bin1"/>
+        <javac includeantruntime="false" srcdir="src" destdir="bin1"/>
+    </target>
+
+    <target name="test" depends="compile">
+        <java fork = "true" failonerror = "yes" classname = "ArrayListExtensionsTest">
+        	<classpath path="bin"></classpath>
+        </java>
+        <java fork = "true" failonerror = "yes" classname = "LinkedListExtensionsTest">
+        <classpath path="bin"></classpath>
+        </java>
+    </target>
+
+</project>
