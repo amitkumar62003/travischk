@@ -6,7 +6,7 @@
 
     <target name="compile">
         <mkdir dir="CSX-351-HW5/bin"/>
-        <javac includeantruntime="false" srcdir="CSX-351-HW5/src" destdir="bin1"/>
+        <javac includeantruntime="false" srcdir="CSX-351-HW5/src" destdir="bin"/>
     </target>
 
     <target name="test" depends="compile">
